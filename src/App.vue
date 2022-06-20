@@ -1,18 +1,22 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <ion-content :fullscreen="true">
+      <ion-router-outlet />
+    </ion-content>
+    <!--  -->
   </ion-app>
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { IonApp, IonRouterOutlet, IonContent } from "@ionic/vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
     IonApp,
-    IonRouterOutlet
-  }
+    IonRouterOutlet,
+    IonContent,
+  },
 });
 </script>
